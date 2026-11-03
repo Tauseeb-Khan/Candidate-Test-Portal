@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Online candidate test portal of Scholars' Group of Institutions, Lucknow.">
+  <title>Candidate Test | Scholars’ Group of Institutions</title>
+
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,500&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container">
+      <img class="site-logo" src="images/logo.png" alt="Scholars’ Group of Institutions logo">
+      <div class="brand">
+        <span class="school-name">Scholars’ Group of Institutions</span>
+        <span class="tagline">Success Here &amp; Hereafter</span>
+      </div>
+      <span class="spacer"></span>
+      <a class="help-link" href="mailto:hrmanager@scholarsgroup.in">Need help? Contact us</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+      <div class="bubbles" id="bubbles" aria-hidden="true"></div>
+      <div class="container">
+        <div>
+          <span class="kicker fade-up">Scholars’ Paradise International School, Lucknow</span>
+          <h1 class="fade-up" style="--delay:.12s">Candidate <span>Test</span> Portal</h1>
+          <p class="lead fade-up" style="--delay:.24s">
+            Select the category you applied for. Your test opens in a new tab.
+            Answer every question and submit the form when you are done.
+          </p>
+        </div>
+
+        <!-- The logo stays still. Only the two rings around it rotate. -->
+        <div class="hero-logo-stage fade-up" style="--delay:.2s">
+          <div class="hero-logo">
+            <span class="ring ring--dashed"></span>
+            <span class="ring ring--gold"></span>
+            <div class="hero-logo-disc">
+              <img src="images/logo.png" alt="Scholars’ Group of Institutions">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="main-content">
+      <!-- ========== TEST CARDS ========== -->
+      <!-- data-type must match a key of FORMS in js/script.js -->
+      <section class="card-grid" aria-label="Choose your test">
+        <button class="card fade-up" style="--delay:.35s" data-type="teaching">
+          <span class="card-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 9l9-5 9 5-9 5-9-5z"/><path d="M7 11.5V16c0 1.3 2.2 3 5 3s5-1.7 5-3v-4.5"/><path d="M21 9v6"/></svg>
+          </span>
+          <h2>Teaching Staff Test</h2>
+          <span class="card-cta">Start test
+            <i><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>
+          </span>
+        </button>
+
+        <button class="card card--nonteaching fade-up" style="--delay:.5s" data-type="nonteaching">
+          <span class="card-icon">
+            <svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 012-2h2a2 2 0 012 2v2M3 13h18"/></svg>
+          </span>
+          <h2>Non-Teaching Staff Test</h2>
+          <span class="card-cta">Start test
+            <i><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>
+          </span>
+        </button>
+      </section>
+
+      <!-- ========== TIPS ========== -->
+      <div class="tips">
+        <div class="tip-item"><b>1</b>Use a stable internet connection</div>
+        <div class="tip-item"><b>2</b>Do not refresh the page during the test</div>
+        <div class="tip-item"><b>3</b>Submit the form when you finish</div>
+      </div>
+
+      <!-- ========== BRANCHES ========== -->
+      <section class="branches" aria-label="Our branches">
+        <h3>Our Branches</h3>
+        <div class="chips">
+          <span>Aziz Nagar</span>
+          <span>Mailaraiganj</span>
+          <span>Vikas Nagar</span>
+          <span>Gaurabagh</span>
+          <span>Muazzam Nagar</span>
+          <span>Kalyanpur</span>
+          <span>Kursi</span>
+          <span>Ring Road</span>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container">
+      <div>
+        <strong>Scholars’ Group of Institutions</strong>
+        A unit of Sir Syed Educational And Welfare Trust<br>
+        Aziz Nagar, Mailaraiganj, Vikas Nagar, Gaurabagh, Muazzam Nagar, Kalyanpur, Kursi and Ring Road Branches
+      </div>
+      <div>
+        <a href="mailto:hrmanager@scholarsgroup.in">hrmanager@scholarsgroup.in</a><br>
+        <a href="tel:+918400050172">+91 8400050172</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== POPUP (opens after a card is clicked) ========== -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+    <div class="popup-card">
+      <button class="popup-close" id="popup-close" aria-label="Close">&times;</button>
+
+      <div class="popup-head">
+        <div class="popup-logo">
+          <span class="pulse-ring"></span>
+          <span class="pulse-ring pulse-ring--late"></span>
+          <div class="popup-logo-disc"><img src="images/logo.png" alt=""></div>
+        </div>
+        <span class="popup-org">Scholars’ Group of Institutions</span>
+        <h3 id="popup-title">Candidate test</h3>
+      </div>
+
+      <div class="popup-body">
+        <p>Your test opens in a new tab. Please read these points before you begin.</p>
+        <ul class="popup-tips">
+          <li>Use a stable internet connection</li>
+          <li>Do not refresh the page during the test</li>
+          <li>Submit the form when you finish</li>
+        </ul>
+
+        <button class="test-btn" id="open-test-btn">
+          <span class="fill"></span>
+          <span id="open-test-label">Open test in new tab</span>
+          <i><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></i>
+        </button>
+        <a class="fallback-link" id="fallback-link" target="_blank" rel="noopener" hidden>
+          Test did not open? Click here
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
